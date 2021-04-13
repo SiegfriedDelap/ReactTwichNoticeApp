@@ -17,8 +17,8 @@ const AppBlock = styled.div`
 
 
 export default class App extends Component {
+    constructor(props) {
 
-    constructor(props){
         super(props);
         this.state = {
             data : [
@@ -26,12 +26,21 @@ export default class App extends Component {
                 {label:'Выпил водки ебать уууу', important:false, id: 2},
                 {label: 'Ну сука, ну банедри', important:true, id: 3}
             ]
-        };
+        }
+
         this.deleteItem = this.deleteItem.bind(this);
         this.addItem = this.addItem.bind(this);
-
         this.maxId = 4; //отсюда идет генерация новых айди
+
     }
+
+
+        // deleteItem = (id) => {
+        //     this.setState(({data})=>({
+        //         data:data.filter(item=> item)
+        //     }))
+        // }
+        //ClassFields without constrotor
 
     deleteItem(id){
         this.setState(({data})=> {
