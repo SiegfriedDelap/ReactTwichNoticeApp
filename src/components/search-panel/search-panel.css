@@ -1,0 +1,24 @@
+.search-panel {
+  margin: 1rem 0;
+}
+
+.search-panel .search-input {
+  width: auto;
+  flex-grow: 1;
+  margin-right: 3px;
+  background-color: #782ce8;
+  color: white;
+}
+
+.search {
+  background-image: url(../../icons/search.svg);
+  background-size: 22px 22px;
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  
+}
+.search::placeholder{
+  color:#e4e3e9;
+  opacity: 0.5;
+}

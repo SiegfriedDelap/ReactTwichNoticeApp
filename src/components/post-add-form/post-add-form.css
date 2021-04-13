@@ -1,0 +1,39 @@
+.bottom-panel {
+  margin-top: 20px;
+}
+
+.bottom-panel .new-post-label {
+  width: auto;
+  flex-grow: 1;
+  margin-right: 3px;
+}
+
+.bottom-panel .color {
+  background-color: #782ce8;
+  color: white;
+}
+
+.color::placeholder{
+  color:#e4e3e9;
+  opacity: 0.5;
+}
+
+.btn-castom{
+  color: #782ce8;
+  border-color: #782ce8;
+}
+
+.btn-castom:active{
+  color:#782ce8
+  }
+.btn-castom:hover{
+  background-color:#782ce8;
+  border-color: #782ce8;
+  color:white;
+  }
+.btn-castom:focus{
+  background-color:#772ce8d3;
+  color:white;
+  outline: none;
+  box-shadow: 0 0 0 2px #782ce8;
+  }
