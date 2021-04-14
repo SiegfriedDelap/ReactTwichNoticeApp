@@ -7,7 +7,7 @@ import './post-list.sass';
 //Во избежание ошибки ключей создаем рандонмые айди
 
 
-const PostList = ({posts, onDelete}) => {
+const PostList = ({posts, onDelete, onToggleImportant, onToggleLike}) => {
 
     const elements = posts.map((item)=>{
         const {id, ...itemProps} = item;
@@ -18,6 +18,8 @@ const PostList = ({posts, onDelete}) => {
                 // important={item.important}
                 {...itemProps}
                 onDelete={()=> onDelete(id)}
+                onToggleImportant={()=>onToggleImportant(id)}
+                onToggleLike={()=>onToggleLike(id)}
                 />
             </li>
         )

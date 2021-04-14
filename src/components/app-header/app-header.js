@@ -19,11 +19,11 @@ import './app-header.css';
 //     }
 // `;
 
-const AppHeader = () => {
+const AppHeader = ({liked, allPosts}) => {
     return (
         <div className="app-header">
             <h1>Ветеран АТО</h1>
-            <h2>14 записей, из них понравилось 88</h2>
+            <h2> {allPosts} записей, из них понравилось {liked}</h2>
         </div>
     )
 }
